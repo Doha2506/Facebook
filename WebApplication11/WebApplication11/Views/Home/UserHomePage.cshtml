@@ -1,0 +1,46 @@
+﻿@{
+    Layout = "/Views/Shared/_LoginLayout.cshtml";
+}
+@model List<User>
+
+<H1> Hello @TempData["User"] </H1>
+<hr/>
+
+<table border="1" style="width=100%">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Fname</th>
+            <th>LName</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Gender</th>
+            <th>DOB</th>
+            <th>City</th>
+            <th>Mobile</th>
+            <th>Country</th>
+            <th>img</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id </td>
+                <td>@item.FName </td>
+                <td>@item.LName </td>
+                <td>@item.Email </td>
+                <td>@item.Password </td>
+                <td>@item.City</td>
+                <td>@item.Country</td>
+                <td>@item.Mobile</td>
+                <td>@item.Gender </td>
+                <td>@item.DOB </td>
+                <td>@item.postImg1</td>
+                <td> <a class="btn btn-danger" href="/Home/Delete/@item.Id"> Delete </a> </td>
+            </tr>   
+        }
+    </tbody>
+
+</table>

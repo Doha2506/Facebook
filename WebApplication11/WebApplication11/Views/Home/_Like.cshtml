@@ -1,0 +1,25 @@
+﻿@using WebApplication11.viewModel
+@model LikeViewModel
+@{
+}
+<style>
+    #btn:active{
+        background-color:blue;
+    }
+    #btn:focus{
+        background-color:blue;
+    }
+    #btn{
+        border:none;
+        background-color:white;
+    }
+</style>
+<form  asp-controller="Home" asp-action="Like">
+        <input asp-for="postId" type="hidden"/>
+         <button name="button" id="btn" type="submit">
+             <div class="like" id="like" onclick="buttonBlue('like')" >
+             <i class="fa-solid fa-thumbs-up"> </i>
+             <p style="color:blue">like</p>
+             </div>
+         </button>
+    </form>

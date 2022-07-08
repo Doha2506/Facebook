@@ -1,0 +1,118 @@
+﻿@model User
+@{
+    Layout = "/Views/Shared/_LoginLayout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="~/materials/icons8-facebook-48.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/CSS/loginAndRegisterFormCss.css">
+    <script src="~/script/script.js"></script>
+    <title>
+        Facebook-login
+    </title>
+</head>
+<body>
+    <div>
+    <Lside>
+        <img src="~/materials/—Pngtree—facebook icon_3584861.png" alt="facebook-logo-png">
+        <p>Facebook gives you the ability to connect with people and share <br>what you want with them.</p>
+    </Lside>
+    <log>
+        <!-- start login -->
+    <form class="login" asp-action="Login">
+        <input type="text" asp-for="Email" required class="login__email"  placeholder="email " >
+        <input type="password" asp-for="Password" required class="login__email"  placeholder="password">
+        <button class="login-button" type="submit">Log in</button>
+    </form>
+    <hr>
+    <button class="new-button" onclick="openPopup()" >new account</button>
+    </log>
+
+    <!-- end login -->
+
+
+    <!-- start register form -->
+    <div class="register" id="modal">
+        <header>
+            <h1>create an account on Facebook</h1>
+            <button class="close-putton" onclick="closePopup()" id="close" >&times;</button>
+            
+        </header>
+        @*<header2>
+            <name>
+                <p>It is fast and easy</p>
+            </name>
+        </header2>*@
+        <form class="register_form" asp-action="Register">
+            <input type="text" asp-for="FName" required class="register__fname" placeholder="first name">
+            <input type="text" asp-for="LName" required class="register__lname" placeholder="last name">
+            <input type="text" asp-for="Email" required class="register__email"  placeholder="email" >
+            <input type="password" asp-for="Password" required class="register__password"  placeholder="password">
+            <input type="text" asp-for="City" required class="register__fname"  placeholder="city" >
+            <input type="text" asp-for="Country" required class="register__lname"  placeholder="country" >
+            <input type="text" asp-for="Mobile" required class="register__email"  placeholder="mobile" >
+            
+            <P class="title__gender">Data Of Birth</P>
+            <input type="date" asp-for="DOB">
+            
+            <p class="title__gender">Gender</p>
+            <gender>
+                <gender1>
+                    <span>male</span>
+                    <input type="radio" asp-for="Gender" class="check-gender"  value="Male" >
+                </gender1>
+                <gender2 >
+                    <span>female</span>
+                    <input type="radio" asp-for="Gender" class="check-gender"   value="Female" >
+                </gender2>
+                <gender3 >
+                    <span>other</span>
+                    <input type="radio" asp-for="Gender" class="check-gender"   value="Other" >
+                </gender3>    
+            </gender>
+            <button class="register__create" type="submit">create account</button>
+        </form>
+        </div>
+    </div>
+
+</div>
+<!-- end register form -->
+
+<!-- start overlay effect -->
+<div  id="overlay" onclick="closePopup()"></div> 
+<!-- end  overlay effect -->
+</body>
+</html>
+
+@{
+    if (TempData["RegisterError"] != null)
+    {
+        <script>
+            alert("@TempData["RegisterError"]")
+        </script>
+    }
+
+    if (TempData["LoginError"] !=null)
+    {
+        <script>
+            alert("@TempData["LoginError"]")
+        </script>
+        
+    }
+
+    if (TempData["Error"] !=null)
+    {
+        <script>
+            alert("@TempData["Error"]")
+        </script>
+        
+    }
+}
+

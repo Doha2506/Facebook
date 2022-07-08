@@ -1,0 +1,54 @@
+.data{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.personalInfo img{
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.personalInfo {
+    display: flex;
+    justify-content: space-between;
+}
+info , new-post{
+    width: 30rem;
+    background-color: $white-color;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+info{
+    height: 20rem;
+}
+new-post{
+    width: 60rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    height: 7rem;
+}
+.personalpost img{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.personalpost button{
+    width: 50rem;
+    height: 2.5rem;
+    background-color: transparent;
+    border-radius:10px ;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:10px ;
+    -ms-border-radius:10px ;
+    -o-border-radius:10px ;
+    border: none;
+    background-color: $white-blue-color-1;
+    cursor: pointer;
+}
+

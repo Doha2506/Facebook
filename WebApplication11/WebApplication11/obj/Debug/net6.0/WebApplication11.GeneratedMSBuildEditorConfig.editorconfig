@@ -1,0 +1,108 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebApplication11
+build_property.RootNamespace = WebApplication11
+build_property.ProjectDir = E:\ضحي\New folder (9)\WebApplication11\WebApplication11\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\ضحي\New folder (9)\WebApplication11\WebApplication11
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/ضحي/New folder (9)/WebApplication11/WebApplication11/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ضحي/New folder (9)/WebApplication11/WebApplication11/Views/Home/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ضحي/New folder (9)/WebApplication11/WebApplication11/Views/Home/editprofileimg.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxlZGl0cHJvZmlsZWltZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ضحي/New folder (9)/WebApplication11/WebApplication11/Views/Home/Friend.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGcmllbmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ضحي/New folder (9)/WebApplication11/WebApplication11/Views/Home/FriendRequest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGcmllbmRSZXF1ZXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ضحي/New folder (9)/WebApplication11/WebApplication11/Views/Home/Get.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ضحي/New folder (9)/WebApplication11/WebApplication11/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ضحي/New folder (9)/WebApplication11/WebApplication11/Views/Home/MainFriend.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNYWluRnJpZW5kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ضحي/New folder (9)/WebApplication11/WebApplication11/Views/Home/personal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxwZXJzb25hbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ضحي/New folder (9)/WebApplication11/WebApplication11/Views/Home/personalFriend.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxwZXJzb25hbEZyaWVuZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ضحي/New folder (9)/WebApplication11/WebApplication11/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ضحي/New folder (9)/WebApplication11/WebApplication11/Views/Home/SearchAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWFyY2hBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ضحي/New folder (9)/WebApplication11/WebApplication11/Views/Home/showfriendData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxzaG93ZnJpZW5kRGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ضحي/New folder (9)/WebApplication11/WebApplication11/Views/Home/UserHomePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VySG9tZVBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ضحي/New folder (9)/WebApplication11/WebApplication11/Views/Home/_Comment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfQ29tbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ضحي/New folder (9)/WebApplication11/WebApplication11/Views/Home/_Like.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfTGlrZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ضحي/New folder (9)/WebApplication11/WebApplication11/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ضحي/New folder (9)/WebApplication11/WebApplication11/Views/Shared/_LoginLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ضحي/New folder (9)/WebApplication11/WebApplication11/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ضحي/New folder (9)/WebApplication11/WebApplication11/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ضحي/New folder (9)/WebApplication11/WebApplication11/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ضحي/New folder (9)/WebApplication11/WebApplication11/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ضحي/New folder (9)/WebApplication11/WebApplication11/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-1ggyr4rskt

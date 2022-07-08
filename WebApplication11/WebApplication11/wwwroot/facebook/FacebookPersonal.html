@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" type="image/png" href="materials/icons8-facebook-48.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/CssPersonal.css">
+        <link rel="stylesheet" href="font/fontawesome-free-6.1.1-web/css/all.min.css">
+        <script src="script/script.js"></script> 
+        <title>
+            Facebook-Home
+        </title>
+    </head>
+    <body>
+    <aside class="box-shadow" >
+        <div class="facebook-lego aside-lego ">
+            <img class="img_aside" src="materials/facebook.png">
+        </div>
+        <div class="search-icon" onclick="openPopup1()">
+            <img src="https://img.icons8.com/ios/25/000000/search--v1.png"/>
+        </div>
+    </aside>
+    <!-- start serch -->
+    <popup class="serchPopup" id="serchPopup">
+        <div class="serch-body">
+            <img src="https://img.icons8.com/ios/20/000000/search--v1.png"/>
+            <input placeholder="search Facebook"></input>
+            <button class="buttonClose" onclick="closePopup1()">&times;</button>
+        </div>
+        <div class="serch-result">
+            <ul>
+                <li>
+                    <div class="serch-item">
+                        <img src="materials/83496ac248c0b3fc22a70c74e8c75746.png">
+                        <p>Acount name</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="serch-item">
+                        <img src="materials/83496ac248c0b3fc22a70c74e8c75746.png">
+                        <p>Acount name</p>
+                    </div>
+                </li>
+            </ul>  
+        </div>
+    </popup>
+    <!-- end serch -->
+    <div  id="overlay"onclick="closePopup1()" ></div> 
+<div class="header">
+    <div class="container">
+        <!-- start acount img && info -->
+        <div class="personalHeader">
+            <div class="coverPage">
+                <img src="materials/Description Facebook Logo 2013 is a hi res Wallpaper for pc desktops.jpg">
+            </div>
+            <div class="personalPhoto">
+                <img src="materials/83496ac248c0b3fc22a70c74e8c75746.png">
+            </div>
+            <div class="userName">
+                <h1>user name</h1>
+                <p>100 Friends</p>
+            </div>
+        </div>
+    </div>
+    <!-- end acount img && info -->
+</div>
+<!-- body -->
+<div class="container">
+    <div class="data">
+        <info>
+            <p>info</p>
+            <div class="personalInfo">
+                <p>show info or edit it</p>
+                <img src="materials/right-arrow.png" onclick="openEditForm()">
+            </div>
+            <hr>
+            <br>
+            <div class="personalInfo">
+                <p> edit personal photo</p>
+                <img src="materials/right-arrow.png" onclick="openPopupPhoto1()">
+            </div>
+            <hr>
+            <br>
+            <div class="personalInfo">
+                <p>edit cover photo</p>
+                <img src="materials/right-arrow.png" onclick="openPopupPhoto2()">
+            </div>
+            <hr>
+        </info>
+        <new-post>
+            <!-- add post -->
+            <div class="personalpost">
+                <img src="materials/83496ac248c0b3fc22a70c74e8c75746.png">
+                <button onclick="openPopup2()">What's on your mind ?</button>
+            </div>
+            <!-- add post -->
+        </new-post>
+    </div>
+</div>
+<!-- body -->
+<new-post-popup id="new-post-popup">
+    <div class="head1"><p>Create post</p>
+        <button class="buttonClose" onclick="closePopup2()">&times;</button>
+    </div>
+    <form class="new-post"> 
+        <div class="head">
+            <img src="materials/83496ac248c0b3fc22a70c74e8c75746.png">
+            <select name="post-state" id="">
+                <option value="1">Puplic</option>
+                <option value="0">private</option>
+            </select>
+        </div>
+        <div class="postBody">
+        <textarea name="" id="" cols="30" rows="10" required placeholder="What's on your mind ?"></textarea>
+        <input  type="file" placeholder="insert photo">
+        <button type="submit" >post</button>
+        </div>
+    </form>
+</new-post-popup>
+<div  id="overlay2"onclick="closePopup2()" ></div> 
+
+
+<change-personal-photo id="change-personal-photo" class="change-personal-photo-p">
+    <form>
+    <p>select your new photo </p>
+    <input  type="file" placeholder="insert photo">
+    <button class="buttonClose" onclick=" closePopupPhoto1()">&times;</button>
+    <button type="submit">&rightarrow;</button>
+    </form>
+</change-personal-photo>
+
+<change-cover-photo id="change-cover-photo" class="change-personal-photo-p">
+    <form>
+    <p>select your new photo </p>
+    <input  type="file" placeholder="insert photo">
+    <button class="buttonClose" onclick=" closePopupPhoto2()">&times;</button>
+    <button type="submit">&rightarrow;</button>
+    </form>
+</change-cover-photo>
+
+
+<div class="edit-form" id="edit-form">
+    <header>
+        <button class="close-putton" onclick="closeEditForm()" id="close" >&times;</button>
+        
+    </header>
+    <form class="edit_form">
+        <input type="text" required class="register__fname" placeholder="first name">
+        <input type="text" required class="register__lname" placeholder="last name">
+        <input type="email" required class="register__email"  placeholder="email or phone number">
+        <input type="password" required class="register__password"  placeholder="password">
+        <P class="title__gender">data of birth</P>
+        <input type="date">
+        <p class="title__gender">gender</p>
+        <gender>
+            <gender1 for="i1">
+                <span  >male</span>
+                <input type="radio"  class="check-gender"  name="gander" id="i1">
+            </gender1>
+            <gender2 for="2">
+                <span>female</span>
+                <input type="radio"  class="check-gender"  name="gander" id="2">
+            </gender2>
+            <gender3 for="3">
+                <span>other</span>
+                <input type="radio"  class="check-gender"  name="gander" id="3">
+            </gender3>    
+        </gender>
+        <button class="register__create">Edit Info</button>
+    </form>
+    </div>
+    <div  id="overlay-form"onclick="closeEditForm()" ></div> 
+<!-- start randre post -->
+    <div class="container">
+        <div class="post-text">
+            <div class="postHeader">
+                <img src="materials/83496ac248c0b3fc22a70c74e8c75746.png">
+                <p>account name</p>
+                <p class="timePost">time</p>
+            </div>
+            <div class="postBody">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti facere obcaecati impedit quae ullam suscipit velit et perspiciatis? Rerum ullam qui voluptas magnam consectetur id suscipit modi cum quos amet!</p>
+                <img src="materials/Description Facebook Logo 2013 is a hi res Wallpaper for pc desktops.jpg">
+            </div>
+            <div class="bodyFooter">
+                <div class="like" id="like" onclick="buttonBlue('like')">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <p>Like</p>
+                </div>
+                <div class="comment" id="comment" onclick="bodycommentShow('bodycomment')">
+                    <i class="fa-solid fa-comment"></i>
+                    <p>comment</p>
+                </div>
+            </div>
+            <div class="bodycomment" id="bodycomment">
+                <ul>
+                    <li>
+                        <div class="commentBody" >
+                            <img src="materials/83496ac248c0b3fc22a70c74e8c75746.png">
+                            <p>comment text</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="commentBody" >
+                            <img src="materials/83496ac248c0b3fc22a70c74e8c75746.png">
+                            <p>comment text</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="commentBody" >
+                            <img src="materials/83496ac248c0b3fc22a70c74e8c75746.png">
+                            <p>comment text</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="MakeComment">
+                    <form>
+                        <input type="text" placeholder="">
+                        <button type="submit"><i class="fa-solid fa-circle-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- end rander post post -->
+</body>
+</html>

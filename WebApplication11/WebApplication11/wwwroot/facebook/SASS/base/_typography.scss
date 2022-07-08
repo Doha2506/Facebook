@@ -1,0 +1,19 @@
+body{
+    font-family: "lato" ,sans-serif;
+    font-weight: 400px;
+    font-size: $defult-font-size;
+    line-height: 1.7;
+}
+.container{
+    width: 100rem;
+    margin-left: calc((100% - 92rem )/2) ;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    @include respond(big-basktop){
+        width: 200;
+        margin-left: calc((100% - 92rem )/2) ;
+    }
+}

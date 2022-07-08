@@ -1,0 +1,14 @@
+aside{
+    background-color:$white-color;
+    position: fixed;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70px;
+    height: 100vh;
+    left: 0px;
+    top:0px ;
+    border-left:1px ;
+    border-color:gray ;
+}

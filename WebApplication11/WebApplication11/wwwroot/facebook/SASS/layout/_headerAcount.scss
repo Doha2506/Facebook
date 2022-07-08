@@ -1,0 +1,40 @@
+.coverPage , .coverPage img{ height: 50rem; width: 100rem; border-radius: 1rem; -webkit-border-radius: 1rem; -moz-border-radius: 1rem; -ms-border-radius: 1rem; -o-border-radius: 1rem;
+}
+
+.personalPhoto , .personalPhoto img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: white;
+}
+.personalPhoto {
+    position: absolute;
+    top:44.1rem;
+    margin-left:20px;
+    border-width:40px ;
+}
+.userName{
+    background-color: white;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 25rem;
+}
+.header{
+    background-color: white;
+    margin-left: 7.5rem;
+    @include respond(tab-land){
+        margin-left: 8rem;
+    }
+}
+
+.userName p{
+    margin-bottom: 7rem;
+}

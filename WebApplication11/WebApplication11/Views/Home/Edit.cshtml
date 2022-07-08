@@ -1,0 +1,71 @@
+﻿@{
+    Layout = "/Views/Shared/_LoginLayout.cshtml";
+}
+
+
+@model User
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="~/materials/icons8-facebook-48.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/CSS/loginAndRegisterFormCss.css">
+    <script src="~/script/script.js"></script>
+    <title>
+        Edit
+    </title>
+</head>
+    <body>
+        <h1 style="font-size:50px;">Edit Form</h1>
+        <div class="edit-form" id="edit-form" href="~/facebook/CSS/CssPersonal.css">
+    
+
+    <form class="edit_form" asp-action="EditInfo"  enctype="multipart/form-data" >
+        <p style="font-size:20px;" >First Name
+        <input type="text" asp-for="FName" required class="register__fname" placeholder="enter your first name">
+        </p>
+        <p style="font-size:20px;">Last Name
+        <input type="text" asp-for="LName" required class="register__lname" placeholder="enter your last name">
+        </p>
+        <p style="font-size:20px;">Password
+        <input style="width:175px; height:50px;margin-left:10px" type="password"  asp-for="Password"  required class="register__password"  placeholder="enter your password">
+        </p>
+        <p style="font-size:20px;">City
+        <input style="width:175px; height:50px;margin-left:65px;margin-top:10px;border-radius:Rounder border;" type="text" asp-for="City" required class="register__city" placeholder="enter your city">
+        </p>
+         <p style="font-size:20px;"> Contry
+        <input  style="width:175px; height:50px;margin-left:40px;margin-top:10px;" type="text" asp-for="Country" required class="register__country" placeholder="enter your country">
+        </p>
+         <p style="font-size:20px;"> Mobile
+        <input  style="width:175px; height:50px;margin-left:40px;margin-top:10px" type="text" asp-for="Mobile" required class="register__mobile" placeholder="enter your mobile number">
+        </p>
+        <p style="font-size:20px;"> Profile Img
+        <input style="margin-top:20px;margin-left:10px;" asp-for="postImg1" type="file" placeholder="insert photo">
+        </p>
+        <P class="title__gender" style="margin-left:100">Data Df Birth</P>
+        <input type="date" asp-for="DOB" style="padding:10px">
+       
+
+        <p class="title__gender">Gender</p>
+        <gender>
+            <gender1 for="i1" >
+                <span  >male</span>
+                <input type="radio" asp-for="Gender" class="check-gender"  value="male">
+            </gender1>
+            <gender2 for="2">
+                <span>female</span>
+                <input type="radio" asp-for="Gender" class="check-gender" value="Female" >
+            </gender2>
+            <gender3 for="3">
+                <span>other</span>
+                <input type="radio" asp-for="Gender"  class="check-gender"  value="Other">
+            </gender3>    
+        </gender>
+        <button class="register__create">Edit Info</button>
+    </form>
+  </div>
+    </body>
+</html>

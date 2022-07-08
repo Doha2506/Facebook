@@ -1,0 +1,122 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Search";
+    Layout = "/Views/Shared/_LoginLayout.cshtml";
+}
+
+@model IEnumerable<WebApplication11.Models.User>
+
+<link rel="stylesheet" href="~/facebook/CSS/CssPersonal.css">
+<link rel="shortcut icon" type="image/png" href="~/facebook/materials/icons8-facebook-48.png">
+<title>
+      Facebook-Search
+</title>
+
+
+
+
+<style>
+   body {
+      font-size:16px;
+    }
+    .center {
+        text-align: center;
+        margin: auto;
+        width: 50%;
+        height:50%;
+        border: 2px solid black;
+        padding: 10px;
+        position: absolute;
+        right: 0px;
+        top:0px;
+        left:0px;
+        bottom:0px;
+        background-color:#ebebeb;
+        
+    }
+    .inp{
+        margin:20px 5px; 
+        padding:7px;
+        border:1px solid black;
+        border-radius:5px;
+        background-color:#ebebeb;
+        font-size:16px;
+        font-weight:bold;
+    }
+    .table{
+        width:100%;
+        height:50%;
+        margin:10px;
+        padding:7px;
+    }
+    td {
+      text-align: center;
+    }
+    th, td {
+      border-bottom: 2px solid #ddd;
+      margin:10px;
+      padding:7px;
+    }
+
+</style>
+
+
+
+<div class="center">
+
+
+@using (Html.BeginForm("SearchAccount", "Home", FormMethod.Post))
+{
+    <img src="https://img.icons8.com/ios/20/000000/search--v1.png"/>
+    
+    <input class="inp" type="text" name="searchWord"/>
+    <input class="inp" type="submit" value="Search" />
+}
+
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+       
+        <th></th>
+    </tr>
+
+    @if (Model.Count() == 0)
+    {
+        <tr>
+            <td style="color:red">
+                Not Found
+            </td>
+            <td></td>
+        </tr>
+    }
+    else
+    {
+
+        foreach (var item in Model)
+        {
+            <tr>
+                <td><a href="/home/personalFriend/@item.Id" target="_blank">@item.FName</a></td>
+
+                <td>
+                    @Html.ActionLink("Add Request", "AddRequest","Home", new { id = item.Id } , new { onclick = "return showMessage();" }) 
+                </td>
+            </tr>
+        }
+    }
+</table>
+@{
+    var x=Convert.ToInt32(TempData["User"]);
+}
+<a href="/Home/personal/@x ">Back</a>
+
+</div>
+
+ <script>
+    function showMessage(){
+        alert("Requested Sucessfully");
+    }
+ 
+ </script>

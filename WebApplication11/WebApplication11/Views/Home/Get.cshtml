@@ -1,0 +1,92 @@
+﻿@using WebApplication11.viewModel
+@{
+    var posts = ViewData["posts"];
+}
+<div>
+            @if(posts !=null){
+        @foreach (var post in (IEnumerable<Newpost>)posts)
+        {
+               <div class="postHeader">
+                       <p>@post.user.FName</p>
+                       <p class="timePost">@post.DOB</p>
+                </div>
+                <div class="postBody">
+                    <p>@post.postdesc </p>
+                   
+                </div>
+                @if(@post.like >0 ){
+                   <p> Likes : @post.like</p>
+                   
+
+                }
+                @if(@post.comment >0 ){
+                  <p> Comments : @post.comment</p>
+                   
+                }
+            <div class="bodyFooter">
+
+                     @{
+
+                        await Html.RenderPartialAsync("_Like", new LikeViewModel { postId = post.id});
+                        
+                    }
+                   
+                    <div class="comment" id="comment" onclick="bodycommentShow('@post.id')">
+                        <i class="fa-solid fa-comment"></i>
+                        <p>comment</p>
+                    </div>
+                </div>
+                <div class="bodycomment" id="@post.id">
+                   
+                    @foreach (var comment in post.comments)
+                    {
+                        <ul>
+                            <li>
+                                <div class="commentBody" >
+                                   <div>
+                                        <p>@comment.UserName</p>
+                                   </div>
+                                   <div>
+                                        <p>@comment.text</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    }
+                </div>
+                
+                <div class="MakeComment" id ="MakeComment">
+
+                    @{
+
+                        await Html.RenderPartialAsync("_Comment", new CommentViewModel { postId = post.id });
+
+                    }
+                </div>
+                <br>
+             }
+            
+        }
+    else
+        {
+            <div class="postHeader">
+                <img src="~/facebook/materials/83496ac248c0b3fc22a70c74e8c75746.png">
+                <p>account name</p>
+                <p class="timePost">time</p>
+            </div>
+            <div class="postBody">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti facere obcaecati impedit quae ullam suscipit velit et perspiciatis? Rerum ullam qui voluptas magnam consectetur id suscipit modi cum quos amet!</p>
+                <img src="~/facebook/materials/Description Facebook Logo 2013 is a hi res Wallpaper for pc desktops.jpg">
+            </div>
+        }
+
+</div>
+<script>
+    function Like(id){
+        int x=id;
+    
+    }
+</script>
+
+

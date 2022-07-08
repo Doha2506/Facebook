@@ -1,0 +1,45 @@
+.search-icon:hover{
+    background-color: $white-blue-color-1;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    width:4rem;
+    height: 4rem;
+    margin-top: 0.2rem;
+}
+
+.search-icon{
+    margin-top: 0.2rem;
+    width: 4rem;
+    height:  4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.search-icon:hover:after{
+    content: "serch";
+    position: absolute;
+    color: $white-color;
+    background-color: rgb(24, 23, 23);
+    width: 8rem;
+    left:9.5rem ;
+    text-align: center;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    }
+.facebook-lego{
+    margin-top: 0.8rem;
+    margin-bottom:0.8rem ;
+}
+
+.img_aside{
+width: 3rem;
+}
+
+

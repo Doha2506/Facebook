@@ -1,0 +1,13 @@
+﻿@using WebApplication11.viewModel
+@model CommentViewModel
+@{
+    //new CommentViewModel {postId = 9};
+}
+<div>
+    <form method="post" asp-controller="Home" asp-action="CommentFun">
+        <input asp-for="postId" type="hidden"/>
+        <input asp-for="text"  />
+        
+         <button name="button" type="submit"><i class="fa-solid fa-circle-right"></i></button>
+    </form>
+</div>

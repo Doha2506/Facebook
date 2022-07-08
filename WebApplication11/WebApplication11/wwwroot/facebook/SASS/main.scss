@@ -1,0 +1,30 @@
+/*
+COLORS:
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+*/
+@import "abstracts/variables";
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+
+
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/asideCom";
+@import "components/popupSerch";
+@import "components/newpostpopup";
+@import "components/photo-edit";
+@import "components/edit-form";
+@import "components/postShow";
+
+@import "layout/aside";
+@import "layout/headerAcount";
+@import "layout/Body";
+
+
+@import "pages/home";

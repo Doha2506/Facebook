@@ -1,0 +1,124 @@
+.postHeader img{
+    width: 4.5rem;
+    height:4.5rem;
+}
+.postHeader p{
+ margin-left: 1rem;
+}
+.post-text{
+    margin-bottom: 1rem;
+}
+.postBody img{
+    width: 50rem;
+    height:40rem;
+}
+.post-text{
+    background-color: $white-color;
+    padding: 1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.postHeader{
+display: flex;
+}
+.bodyFooter ,.like ,.comment{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.like ,.comment{
+    justify-content:center;
+    cursor: pointer;
+    height: 4rem;
+}
+.like ,.comment{
+    width: 20rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.colorBlue{
+    color: white;
+    background-color: $dark-blue-color-1;
+}
+
+
+.like:hover ,.comment:hover{
+    background-color: $white-blue-color-1;
+}
+.bodycomment li{
+    list-style: none;
+}
+.bodycomment{
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: column;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    display: none;
+}
+.bodycommentShow{
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    display: flex;
+}
+.bodycomment li div{
+    display: flex;
+    margin: 1rem;
+}
+.bodycomment li div img{
+    margin: 1rem;
+}
+
+.bodycomment img{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.MakeComment {
+    display: flex;
+    justify-content: center;
+}
+.MakeComment input{
+        width: 30rem;
+        height: 3rem;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+        border: none;
+        padding: 1rem;
+        background-color: $white-blue-color-1;
+}
+.MakeComment button{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: none;
+    background-color: $dark-blue-color-1;
+    cursor: pointer;
+    color: white;
+}
+
